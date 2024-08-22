@@ -18,6 +18,12 @@ body {
 a:link {
     color: var(--tg-theme-link-color);
 header {
-    color: var(--tg-theme-header-bg-color);
+    backgroud: var(--tg-theme-header-bg-color);
+}
+main {
+    backgroud: var(--tg-theme-section-separator-color);
+}
+footer {
+    backgroud: var(--tg-theme-section-bg-color)
 }
 </style>
