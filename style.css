@@ -15,5 +15,7 @@ body {
   color: var(--tg-theme-text-color);
   background: var(--tg-theme-bg-color);
 }
+a {
+    color: var(--tg-theme-link-color)
 
 </style>
