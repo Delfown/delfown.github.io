@@ -16,6 +16,8 @@ body {
   background: var(--tg-theme-bg-color);
 }
 a:link {
-    color: var(--tg-theme-link-color)
-
+    color: var(--tg-theme-link-color);
+header {
+    color: var(--tg-theme-header-bg-color);
+}
 </style>
