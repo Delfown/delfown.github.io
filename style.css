@@ -17,15 +17,15 @@ body {
 }
 a:link {
     color: var(--tg-theme-link-color);
-#header {
+header {
     backgroud: var(--tg-theme-header-bg-color);
 }
-#main {
+main {
     width: 100%;
     padding: 20px;
     backgroud: var(--tg-theme-section-separator-color);
 }
-#footer {
+footer {
     backgroud: var(--tg-theme-section-bg-color)
 }
 h1 {
