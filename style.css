@@ -77,13 +77,14 @@ a{
   align-items: center;
   column-gap: .75rem;
   padding: .75rem;
-  color: var(--tg-theme-button-text-color);
+  color: var(--tg-theme-text-color);
   border-radius: .5rem;
   margin-bottom: 1rem;
   transition: .3s;
   cursor: pointer;
 }
 .nav__link:hover{
+  color: var(--tg-theme-button-text-color);
   background-color: var(--tg-theme-button-color);
 }
 .nav__icon{
