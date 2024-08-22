@@ -17,6 +17,18 @@ body {
 }
 a:link {
     color: var(--tg-theme-link-color);
+a:hover{
+    color: var(--tg-theme-hint-color);
+}
+a:active{
+    color: var(--tg-theme-hint-color);
+}   
+a:visited{
+    color: var(--tg-theme-hint-color);
+}
+a:focus{
+    color: var(--tg-theme-hint-color);
+}
 header {
     backgroud: var(--tg-theme-header-bg-color);
 }
