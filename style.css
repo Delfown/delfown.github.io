@@ -7,7 +7,7 @@
   --body-font: 'Poppins', sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: .875rem;
-  --z-fixed: 100;
+  --z-fixed: 999999;
 }
 *,::before,::after{
   box-sizing: border-box;
@@ -16,7 +16,7 @@ body{
   position: relative;
   margin: 0;
   padding: 2rem 0 0 6.75rem;
-  font-family: var(--body-font);
+  font-family: "Montserrat", sans-serif;
   font-size: var(--normal-font-size);
   transition: .5s;
   min-height: 100vh;
