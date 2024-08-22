@@ -17,20 +17,6 @@
   --small-font-size: .875rem;
   --z-fixed: 100;
 }
-
-body{
-  position: relative;
-  margin: 0;
-  padding: 2rem 0 0 6.75rem;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  transition: .5s;
-  min-height: 100vh;
-  background: url("https://source.unsplash.com/z7prq6BtPE4");
-    background-position: center;
-    background-size: cover;
-}
-
 body {
   position: relative;
   margin: 0;
@@ -45,20 +31,7 @@ body {
   background: var(--tg-theme-bg-color);
 }
 a:link {
-    color: var(--tg-theme-link-color);
-a:hover{
-    color: var(--tg-theme-hint-color);
-}
-a:active{
-    color: var(--tg-theme-hint-color);
-}   
-a:visited{
-    color: var(--tg-theme-hint-color);
-}
-a:focus{
-    color: var(--tg-theme-hint-color);
-}
-    
+    color: var(--tg-theme-link-color); 
 a{
   text-decoration: none;
 }   
@@ -140,17 +113,6 @@ ul{
 }
 .rotate{
   transform: rotate(180deg);
-}
-header {
-    backgroud: var(--tg-theme-header-bg-color);
-}
-main {
-    width: 100%;
-    padding: 20px;
-    backgroud: var(--tg-theme-section-separator-color);
-}
-footer {
-    backgroud: var(--tg-theme-section-bg-color);
 }
 img {
     border-radius: 8px;
