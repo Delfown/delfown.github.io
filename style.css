@@ -32,6 +32,7 @@ body {
 }
 a:link {
     color: var(--tg-theme-link-color); 
+}
 a{
   text-decoration: none;
 }   
