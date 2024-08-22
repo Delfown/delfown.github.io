@@ -1,17 +1,46 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+
+:root{
+  --nav-width: 92px;
+  --first-color: #CA26FF;
+  --bg-color: #12192C;
+  --sub-color: #B6CEFC;
+  --white-color: #FFF;
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  --z-fixed: 100;
+}
+
+body{
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 0 6.75rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+  min-height: 100vh;
+  background: url("https://source.unsplash.com/z7prq6BtPE4");
+    background-position: center;
+    background-size: cover;
 }
 
 body {
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 0 6.75rem;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  transition: .5s;
+  min-height: 100vh;
   color: var(--tg-theme-text-color);
   background: var(--tg-theme-bg-color);
 }
@@ -32,7 +61,17 @@ a:focus{
     
 a{
   text-decoration: none;
+}   
+h1{
+  margin: 0;
+  color: var(--white-color);
 }
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .l-navbar{
   position: fixed;
   top: 0;
@@ -112,10 +151,6 @@ main {
 }
 footer {
     backgroud: var(--tg-theme-section-bg-color);
-}
-h1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
 }
 img {
     border-radius: 8px;
