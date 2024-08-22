@@ -1,10 +1,4 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-*,::before,::after{
-  box-sizing: border-box;
-}
-
 
 :root{
   --nav-width: 92px;
@@ -17,25 +11,21 @@
   --small-font-size: .875rem;
   --z-fixed: 100;
 }
-body {
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
   position: relative;
   margin: 0;
   padding: 2rem 0 0 6.75rem;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
   transition: .5s;
   min-height: 100vh;
-  color: var(--tg-theme-text-color);
-  background: var(--tg-theme-bg-color);
+  background: url("https://www.hdwallpapers.in/download/dark_purple_black_paint_liquid_stains_4k_hd_abstract-HD.jpg");
+    background-position: center;
+    background-size: cover;
 }
-a:link {
-    color: var(--tg-theme-link-color); 
-}
-a{
-  text-decoration: none;
-}   
 h1{
   margin: 0;
   color: var(--white-color);
@@ -45,7 +35,9 @@ ul{
   padding: 0;
   list-style: none;
 }
-
+a{
+  text-decoration: none;
+}
 .l-navbar{
   position: fixed;
   top: 0;
@@ -115,31 +107,3 @@ ul{
 .rotate{
   transform: rotate(180deg);
 }
-img {
-    border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-p {
-    width: 350px;
-    margin: 0 auto;
-}
-bottom {
-    border: 0;
-    border-radius: 5px;
-    margin-top: 50px;
-    height: 60px;
-    width: 200px;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 500ms ease;
-    color: var(--tg-theme-button-text-color);
-    backgroud: var(--tg-theme-button-color);
-}
-bottom:hover {
-    backgroud: var(--tg-theme-secondary-bg-color)
-}
-    
-</style>
