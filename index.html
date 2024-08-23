@@ -17,7 +17,7 @@
                 <div>
                     <div class="nav__brand">
                         <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
-                        <a href="#" class="nav__logo">Привет, User</a>
+                        <a href="#" class="nav__logo" id="name_user">Привет, User</a>
                     </div>
 
                     <div class="nav__list">
@@ -84,5 +84,12 @@
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
       <script src="https://telegram.org/js/telegram-web-app.js"></script>
+      <script>
+        let tg = window.Telegram.WebApp;
+        let navtoggle = document.getElementById("nav-toggle");
+        navtoggle.addEventListener("click", () => {
+           document.getElementById("name_user").value = tg.initDataUnsafe.user.first_name;
+        });
+      </script>
   </body>
 </html>
