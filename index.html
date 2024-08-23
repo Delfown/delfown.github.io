@@ -84,24 +84,6 @@
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
       <script src="https://telegram.org/js/telegram-web-app.js"></script>
-      <script>
-        // Убедитесь, что Telegram Web Apps API загружен
-        Telegram.WebApp.ready();
-    
-        // Получите данные пользователя
-        const user = Telegram.WebApp.initDataUnsafe.user;
-    
-        // Вывод данных пользователя в консоль для проверки
-        console.log("Данные пользователя:", user);
-    
-        // Обновите элемент с именем пользователя
-        if (user) {
-            document.getElementById('name_user').textContent = `Привет, ${user.first_name}`;
-        } else {
-            console.error("Не удалось получить данные пользователя.");
-        }
-      </script>
-
-      </script>
+      <script src="script-tg.js" defer></script>
   </body>
 </html>
