@@ -85,10 +85,11 @@
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
       <script src="https://telegram.org/js/telegram-web-app.js"></script>
       <script>
-        let tg = window.Telegram.WebApp;
-        let navtoggle = document.getElementById("nav-toggle");
-        navtoggle.addEventListener("click", () => {
-           document.getElementById("name_user").value = tg.initDataUnsafe.user.first_name;
+        window.Telegram.WebApp.ready();
+        const user = window.Telegram.WebApp.initDataUnsafe.user;
+        if (user) {
+          document.getElementById('name_user').textContent = `Привет, ${user.first_name}`;
+        }
         });
       </script>
   </body>
