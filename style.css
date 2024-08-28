@@ -154,10 +154,10 @@ ul{
   border: 1px solid #FF00FF;
   border-radius: .5rem;
   position: relative;
-  background: #fff;
+  background: var(--tg-theme-bg-color);
   margin: 0 20px 20px 0;
   text-decoration: none;
-  color: #474747;
+  color: var(--tg-theme-text-color);
   z-index: 0;
   height: 200px;
 }
