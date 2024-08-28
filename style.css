@@ -141,7 +141,7 @@ ul{
 }
 .product {
   display: block;
-  border: 1px solid #FF00FF;
+  border: 1px solid var(--tg-theme-section-separator-color);
   border-radius: .5rem;
   position: relative;
   background: var(--tg-theme-bg-color);
