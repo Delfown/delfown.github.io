@@ -179,7 +179,8 @@ ul{
   position: relative;
   padding-bottom: 100%;
   overflow: hidden;
-}.product-photo img {
+}
+.product-photo img {
   position: absolute;
   border-radius: .5rem;
   top: 0;
