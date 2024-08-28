@@ -32,8 +32,28 @@ ul{
   padding: 0;
   list-style: none;
 }
-a{
+  a{
   text-decoration: none;
+}
+
+}
+.product p {
+  position: relative;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4em;
+  height: 5.6em;
+  overflow: hidden;
+}
+.product p:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4.2em;
+  height: 1.6em;
+  background: linear-gradient(to left top, #fff, rgba(255, 255, 255, 0));
 }
 .l-navbar {
   position: fixed;
@@ -107,12 +127,12 @@ a{
 .rotate{
   transform: rotate(180deg);
 }
-img{
-  border-radius: 8px;
+/*img{
+  border-radius: .5rem;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
+}*/
 .header, .main-content, .footer {
   position: relative;
   z-index: 1; /* Низкий z-index для остальных элементов */
@@ -122,4 +142,62 @@ img{
 .main-content {
   margin-top: 0; /* Убираем отступ сверху */
   padding-top: 1rem; /* Добавляем внутренний отступ сверху */
+}
+.product-wrapper {
+  display: block;
+  width: 50%;
+  float: left;
+  transition: width .2s;
+}
+.product {
+  display: block;
+  border: 1px solid #FF00FF;
+  border-radius: .5rem;
+  position: relative;
+  background: #fff;
+  margin: 0 20px 20px 0;
+  text-decoration: none;
+  color: #474747;
+  z-index: 0;
+  height: 200px;
+}
+.products {
+  list-style: none;
+  margin: 0 -20px 0 0;
+  padding: 0;
+  background: yellow;
+}
+@media only screen and (min-width: 450px) {
+  .product-wrapper {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .product-wrapper {
+    width: 33.333%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .product-wrapper {
+    width: 25%;
+  }
+}
+.product-photo {
+  position: relative;
+  padding-bottom: 100%;
+
+  overflow: hidden;
+}.product-photo img {
+  position: absolute;
+  border-radius: .5rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  transition: transform .4s ease-out;
 }
