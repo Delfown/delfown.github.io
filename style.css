@@ -160,6 +160,7 @@ ul{
   color: var(--tg-theme-text-color);
   z-index: 0;
   height: 200px;
+  overflow: hidden;
 }
 .products {
   list-style: none;
