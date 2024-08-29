@@ -188,15 +188,15 @@ ul{
 }
 .product-photo img {
   position: absolute;
-  border-radius: .5rem;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-  transition: transform .4s ease-out;
+  max-width: 100%;  /* Адаптация под ширину контейнера */
+  height: auto;     /* Сохранение пропорций изображения */
+  max-height: 280px; /* Максимальная высота */
+  max-width: 280px; /* Максимальная ширина */
+  margin: 0 auto; 
 }
 .footer {
   margin-top: 35px;
