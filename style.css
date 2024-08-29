@@ -38,12 +38,25 @@ ul{
 
 }
 .product p {
-  position: relative;
   margin: 0;
   font-size: 1em;
   line-height: 1.4em;
-  height: 5.6em;
+  max-height: 5.6em; /* Ограничение максимальной высоты */
   overflow: hidden;
+  text-overflow: ellipsis; /* Добавляет троеточие, если текст обрезается */
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Ограничивает количество строк */
+  -webkit-box-orient: vertical;
+}
+.product p:after {
+  content: '';
+  display: block; /* Лучше использовать block для корректного размещения */
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Поменял на left, чтобы градиент плавно перекрывал весь текст */
+  width: 100%; /* Занимает всю ширину */
+  height: 1.6em;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Корректный градиент сверху вниз */
 }
 .l-navbar {
   position: fixed;
