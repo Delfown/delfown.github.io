@@ -157,7 +157,6 @@ ul{
   list-style: none;
   margin: 0 -20px 0 0;
   padding: 0;
-  background: yellow;
 }
 .products::after {
   content: "";
@@ -199,14 +198,14 @@ ul{
   transition: transform .4s ease-out;
 }
 .footer {
-  position: absolute;
-  margin: 20px 0 0 0;
+  margin-top: 35px;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 0.2rem;
-  background: var(--tg-theme-header-bg-color);
-  color: var(--tg-theme-text-color);
+  background: purple;
+  color: white;
   font-weight: 300;
   display: flex;
   justify-content: center;
