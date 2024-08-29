@@ -159,6 +159,11 @@ ul{
   padding: 0;
   background: yellow;
 }
+.products::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media only screen and (min-width: 450px) {
   .product-wrapper {
     width: 50%;
