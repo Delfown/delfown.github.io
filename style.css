@@ -132,6 +132,7 @@ ul{
 .main-content {
   margin-top: 0; /* Убираем отступ сверху */
   padding-top: 1rem; /* Добавляем внутренний отступ сверху */
+  display: flex;
 }
 .product-wrapper {
   display: block;
@@ -191,4 +192,18 @@ ul{
   max-height: 100%;
   margin: auto;
   transition: transform .4s ease-out;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.2rem;
+  background: var(--tg-theme-header-bg-color);
+  color: var(--tg-theme-text-color);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
 }
