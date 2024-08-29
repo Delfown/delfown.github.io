@@ -205,7 +205,7 @@ ul{
   left: 0;
   right: 0;
   padding: 0.2rem;
-  background: purple;
+  background: var(--tg-theme-secondary-bg-color);
   color: white;
   font-weight: 300;
   display: flex;
