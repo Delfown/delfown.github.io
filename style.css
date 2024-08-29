@@ -133,6 +133,7 @@ ul{
   margin-top: 0; /* Убираем отступ сверху */
   padding-top: 1rem; /* Добавляем внутренний отступ сверху */
   display: flex;
+  padding-bottom: 40px;
 }
 .product-wrapper {
   display: block;
