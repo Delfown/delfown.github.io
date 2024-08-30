@@ -194,7 +194,7 @@ ul{
 }
 .product-photo {
   position: relative;
-  padding-bottom: 100%;
+  padding-bottom: 100px;
   overflow: hidden;
 }
 .product-photo img {
