@@ -32,7 +32,7 @@ ul{
   padding: 0;
   list-style: none;
 }
-  a{
+a{
   text-decoration: none;
 }
 
@@ -45,6 +45,7 @@ ul{
   text-overflow: ellipsis; /* Добавляет троеточие, если текст обрезается */
   display: -webkit-box;
   -webkit-line-clamp: 4; /* Ограничивает количество строк */
+  line-clamp: 4; 
   -webkit-box-orient: vertical;
 }
 .product p:after {
