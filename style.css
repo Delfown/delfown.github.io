@@ -196,7 +196,8 @@ a{
 .product-photo {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  margin-top: 25px;
   overflow: hidden;
 }
 .product-photo img {
