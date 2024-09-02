@@ -1,21 +1,21 @@
 html, body{
   width:100%;
   overflow-x: hidden;
-  background-color:#000;
+  background-color:var(--tg-theme-bg-color);
   font-family: 'Inconsolata', monospace;
 }
 
 h1 {
   padding-top:100px;
   font-size: 60px;
-  color:#fff;
+  color:var(--tg-theme-button-color);
 }
 
 p {
   font-size: 20px;
-  color:#fff;
+  color:var(--tg-theme-button-color);
   white-space: nowrap;
-  border-right: solid 3px #fff;
+  border-right: solid 3px var(--tg-theme-button-color);
   overflow: hidden; 
 }
 
