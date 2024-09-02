@@ -33,3 +33,38 @@ p {
   from{border-right-color: #fff;}
   to{border-right-color: transparent;}
 }
+
+a {
+  position: relative;
+  display: flex;
+  height: 2rem;
+  width: auto;
+  font-size: 2em;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: var(--tg-theme-button-color);
+}
+
+  a:before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 20%;
+    background: var(--tg-theme-button-color);
+    position: absolute;
+    bottom: -5px;
+    right: 80%;
+    opacity: 0;
+    
+    -webkit-transition: width .15s, right .15s .3s, opacity .05s .35s;
+            transition: width .15s, right .15s .3s, opacity .05s .35s;
+  }
+
+a:hover:before {
+  width: 100%;
+  right: 0;
+  opacity: 1;
+  
+  -webkit-transition:opacity 0s, right 0.15s, width 0.15s 0.2s;
+		     transition:opacity 0s, right 0.15s, width 0.15s 0.2s;
+}
