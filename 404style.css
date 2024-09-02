@@ -68,3 +68,9 @@ a:hover:before {
   -webkit-transition:opacity 0s, right 0.15s, width 0.15s 0.2s;
 		     transition:opacity 0s, right 0.15s, width 0.15s 0.2s;
 }
+.backhome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
