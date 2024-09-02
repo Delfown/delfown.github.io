@@ -1,3 +1,18 @@
+html, body{
+  width:100%;
+  overflow-x: hidden;
+  background-color:#000;
+  font-family: 'Inconsolata', monospace;
+}
+
+/* Agora definimos as característica do título */
+h1 {
+  padding-top:100px;
+  font-size: 60px;
+  color:#fff;
+}
+
+/* Agora definimos as característica do parágrafo. */
 p {
   font-size: 20px;
   color:#fff;
